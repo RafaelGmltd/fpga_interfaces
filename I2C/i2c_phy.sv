@@ -1,17 +1,3 @@
-// асинхронный ресет писать надо и ресетить все в олвис блоке в топ модуль его вынести
-/*
-logic [1: 0] sync_reg;
-logic        sync_rst;
-
-always_ff @(posedge clk_i or posedge rst_i)
-  if (rst_i) 
-    sync_reg <= 2'b00;
-  else          
-    sync_reg <= {sync_reg[0], 1'b1};
-
-assign sync_rst = sync_reg[1];
-*/
-
 module i2c_phy
     (
     input        i_clk,
